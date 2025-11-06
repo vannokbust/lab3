@@ -1,0 +1,116 @@
+HTML 
+<!DOCTYPE html> 
+<html lang="uk"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, 
+initial-scale=1.0"> 
+ <title>TechStore by Влад Скоробагач</title> 
+ <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+ <header> 
+ <h1>TechStore by Влад Іваненко</h1> 
+ <nav> 
+ <a href="#">Головна</a> 
+ <a href="#">Продукти</a> 
+ <a href="#">Контакти</a> 
+ </nav> 
+ </header> 
+ <main> 
+ <div class="product"> 
+ <img src="images/xiaomi.jpeg" alt="Xiaomi"> 
+ <h2>Xiaomi Mi A1</h2> 
+ <p>Надійний смартфон з подвійною камерою та яскравим дизайном.</p> 
+ <a href="https://www.mi.com" target="_blank" 
+class="btn">Детальніше</a> 
+ </div> 
+ <div class="product"> 
+ <img src="images/iphone.jpeg" alt="iPhone 14"> 
+ <h2>iPhone 14</h2> 
+ <p>Потужний та стильний смартфон з неймовірною камерою.</p>  <a href="https://www.apple.com" target="_blank" 
+class="btn">Детальніше</a> 
+ </div> 
+ <div class="product"> 
+ <img src="images/iphone-orange.jpeg" alt="iPhone Orange Edition">  <h2>iPhone Orange Edition</h2>
+ <p>Ексклюзивний дизайн та передові технології в одному корпусі.</p> 
+ <a href="https://www.apple.com" target="_blank" class="btn">Детальніше</a> 
+ </div> 
+ </main> 
+ <footer> 
+ <p>Телефон: +380 50 123 4567 | Email: info@techstore.com</p>  <p>Facebook | Twitter | Instagram</p> 
+ </footer> 
+</body> 
+</html> 
+CSS 
+* { 
+ margin: 0; 
+ padding: 0; 
+ box-sizing: border-box; 
+} 
+body { 
+ font-family: Arial, sans-serif; 
+ background-color: #f5f5f5; 
+} 
+header { 
+ background-color: #1e90ff; 
+ color: white; 
+ padding: 20px; 
+ text-align: center; 
+} 
+nav { 
+ margin-top: 10px; 
+} 
+nav a {
+ color: white; 
+ margin: 0 10px; 
+ text-decoration: none; 
+ font-weight: bold; 
+} 
+nav a:hover { 
+ text-decoration: underline; 
+} 
+main { 
+ display: flex; 
+ justify-content: center; 
+ flex-wrap: wrap; 
+ gap: 20px; 
+ padding: 30px; 
+} 
+.product { 
+ background-color: white; 
+ border-radius: 8px; 
+ padding: 15px; 
+ width: 280px; 
+ text-align: center; 
+ box-shadow: 0 2px 8px rgba(0,0,0,0.1); } 
+.product img { 
+ width: 100%; 
+ height: auto; 
+ border-radius: 8px; 
+ margin-bottom: 10px; 
+} 
+.product h2 { 
+ margin-bottom: 10px; 
+} 
+.product p { 
+ font-size: 14px; 
+ margin-bottom: 15px; 
+ color: #555; 
+}
+.btn { 
+ display: inline-block; 
+ background-color: #1e90ff;  color: white; 
+ padding: 10px 15px; 
+ border-radius: 4px; 
+ text-decoration: none; 
+ transition: background-color 0.3s; } 
+.btn:hover { 
+ background-color: #0b63c7; } 
+footer { 
+ background-color: #333; 
+ color: white; 
+ text-align: center; 
+ padding: 15px; 
+ margin-top: 20px; 
+}
